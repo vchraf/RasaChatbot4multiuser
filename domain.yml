@@ -1,0 +1,993 @@
+--- 
+actions: 
+  - utter_lang
+  - utter_greet_fr
+  - utter_prpa_fr
+  - utter_typelocation_fr
+  - utter_saisonOrNot_fr
+  - utter_linkMsg1_fr
+  - utter_linkMsg2_fr
+  - utter_linkMsg3_fr
+  - utter_endMsg1_fr
+  - utter_endMsg2_fr
+  - utter_endMsg01_fr
+  - utter_endMsg02_fr
+  - utter_endMsg03_fr
+  - utter_endMsg4_fr
+  - utter_typeop_fr
+  - utter_m_Location_msg_fr
+  - utter_vente_msg_fr
+  - utter_interess_fr
+
+  - utter_greet_ang
+  - utter_prpa_ang
+  - utter_typelocation_ang
+  - utter_saisonOrNot_ang
+  - utter_linkMsg1_ang
+  - utter_linkMsg2_ang
+  - utter_linkMsg3_ang
+  - utter_endMsg1_ang
+  - utter_endMsg2_ang
+  - utter_endMsg01_ang
+  - utter_endMsg02_ang
+  - utter_endMsg03_ang
+  - utter_endMsg4_ang
+  - utter_typeop_ang
+  - utter_m_Location_msg_ang
+  - utter_vente_msg_ang
+  - utter_interess_ang
+
+  - utter_greet_ar
+  - utter_prpa_ar
+  - utter_typelocation_ar
+  - utter_saisonOrNot_ar
+  - utter_linkMsg1_ar
+  - utter_linkMsg2_ar
+  - utter_linkMsg01_ar
+  - utter_linkMsg02_ar
+  - utter_linkMsg03_ar
+  - utter_endMsg1_ar
+  - utter_endMsg2_ar
+  - utter_endMsg3_ar
+  - utter_endMsg4_ar
+  - utter_typeop_ar
+  - utter_m_Location_msg_ar
+  - utter_vente_msg_ar
+  - utter_interess_ar
+forms: 
+  - pa_form_fr
+  - saison_form_fr
+  - n_saison_form_fr
+  - achat_form_fr
+  - pr_form_fr
+
+  - pa_form_ang
+  - saison_form_ang
+  - n_saison_form_ang
+  - achat_form_ang
+  - pr_form_ang
+
+  - pa_form_ar
+  - saison_form_ar
+  - n_saison_form_ar
+  - achat_form_ar
+  - pr_form_ar
+intents: 
+  - lang
+  - lang_fr
+  - particulier_fr
+  - professionnel_fr
+  - interess_ins_fr
+  - location_fr
+  - achat_fr
+  - vente_fr
+  - s_Location_fr
+  - m_Location_fr
+  - saison_type_fr
+  - n_saison_type_fr
+
+  - lang_ang
+  - particulier_ang
+  - professionnel_ang
+  - interess_ins_ang
+  - location_ang
+  - achat_ang
+  - vente_ang
+  - s_Location_ang
+  - m_Location_ang
+  - saison_type_ang
+  - n_saison_type_ang
+
+  - lang_ar
+  - particulier_ar
+  - professionnel_ar
+  - interess_ins_ar
+  - location_ar
+  - achat_ar
+  - vente_ar
+  - s_Location_ar
+  - m_Location_ar
+  - saison_type_ar
+  - n_saison_type_ar
+slots:
+  name_fr: 
+    auto_fill: false
+    type: unfeaturized
+  adress_fr: 
+    auto_fill: false
+    type: unfeaturized
+  email_fr: 
+    auto_fill: false
+    type: unfeaturized
+  type_fr: 
+    auto_fill: false
+    type: unfeaturized
+  city_fr: 
+    auto_fill: false
+    type: unfeaturized
+  ntype_fr: 
+    auto_fill: false
+    type: unfeaturized
+  atype_fr: 
+    auto_fill: false
+    type: unfeaturized
+  budget_fr: 
+    auto_fill: false
+    type: unfeaturized
+  prtype_fr: 
+    auto_fill: false
+    type: unfeaturized
+  entite_fr: 
+    auto_fill: false
+    type: unfeaturized
+  prcity_fr: 
+    auto_fill: false
+    type: unfeaturized
+  tele_fr: 
+    auto_fill: false
+    type: unfeaturized
+
+  name_ang: 
+    auto_fill: false
+    type: unfeaturized
+  adress_ang: 
+    auto_fill: false
+    type: unfeaturized
+  email_ang: 
+    auto_fill: false
+    type: unfeaturized
+  type_ang: 
+    auto_fill: false
+    type: unfeaturized
+  city_ang: 
+    auto_fill: false
+    type: unfeaturized
+  ntype_ang: 
+    auto_fill: false
+    type: unfeaturized
+  atype_ang: 
+    auto_fill: false
+    type: unfeaturized
+  budget_ang: 
+    auto_fill: false
+    type: unfeaturized
+  prtype_ang: 
+    auto_fill: false
+    type: unfeaturized
+  entite_ang: 
+    auto_fill: false
+    type: unfeaturized
+  prcity_ang: 
+    auto_fill: false
+    type: unfeaturized
+  tele_ang: 
+    auto_fill: false
+    type: unfeaturized
+
+  name_ar: 
+    auto_fill: false
+    type: unfeaturized
+  adress_ar: 
+    auto_fill: false
+    type: unfeaturized
+  email_ar: 
+    auto_fill: false
+    type: unfeaturized
+  type_ar: 
+    auto_fill: false
+    type: unfeaturized
+  city_ar: 
+    auto_fill: false
+    type: unfeaturized
+  ntype_ar: 
+    auto_fill: false
+    type: unfeaturized
+  atype_ar: 
+    auto_fill: false
+    type: unfeaturized
+  budget_ar: 
+    auto_fill: false
+    type: unfeaturized
+  prtype_ar: 
+    auto_fill: false
+    type: unfeaturized
+  entite_ar: 
+    auto_fill: false
+    type: unfeaturized
+  prcity_ar: 
+    auto_fill: false
+    type: unfeaturized
+  tele_ar: 
+    auto_fill: false
+    type: unfeaturized
+templates: 
+  utter_ask_name_fr: 
+    - 
+      text: "Comment vous appelez-vous ? (Nom et Prénom)"
+  utter_ask_adress_fr: 
+    - 
+      text: "Dans quelle ville êtes-vous installé ?"
+  utter_ask_email_fr: 
+    - 
+      text: "Quelle est votre adresse mail ?"
+  utter_ask_type_fr: 
+   - 
+      buttons: 
+        - 
+          payload: "Maison"
+          title: Maison
+        - 
+          payload: "Appartement"
+          title: Appartement
+        - 
+          payload: "Studio"
+          title: Studio
+        - 
+          payload: "Villa"
+          title: Villa
+        - 
+          payload: "Duplex"
+          title: Duplex
+        - 
+          payload: "Riad"
+          title: Riad
+      text: "Quel type de biens vous intéresse "
+  utter_ask_city_fr: 
+    - 
+      text: "Dans quelle ville souhaitez-vous lancer votre recherche ?"
+  utter_ask_ntype_fr: 
+   - 
+      buttons:
+        - 
+          payload: "Maison"
+          title: Maison
+        - 
+          payload: "Appartement"
+          title: Appartement
+        - 
+          payload: Studio
+          title: "Studio"
+        - 
+          payload: Villa
+          title: "Villa"
+        - 
+          payload: Duplex
+          title: "Duplex"
+        - 
+          payload: Riad
+          title: "Riad"
+        - 
+          payload: Bureau
+          title: "Bureau"
+        - 
+          payload: Local commercial
+          title: "Local commercial"
+        - 
+          payload: Terrain habitable
+          title: "Terrain habitable"
+        - 
+          payload: Terrain agricole
+          title: "Terrain agricole"
+        - 
+          payload: Ferme
+          title: "Ferme"
+        - 
+          payload: Entrepôt
+          title: "Entrepôt"
+      text: "Quel type de biens vous intéresse ?"
+  utter_ask_atype_fr: 
+   - 
+      buttons: 
+        - 
+          payload: "Maison"
+          title: Maison
+        - 
+          payload: "Appartement"
+          title: Appartement
+        - 
+          payload: Studio
+          title: "Studio"
+        - 
+          payload: Villa
+          title: "Villa"
+        - 
+          payload: Duplex
+          title: "Duplex"
+        - 
+          payload: Riad
+          title: "Riad"
+        - 
+          payload: Bureau
+          title: "Bureau"
+        - 
+          payload: Local commercial
+          title: "Local commercial"
+        - 
+          payload: Terrain habitable
+          title: "Terrain habitable"
+        - 
+          payload: Terrain agricole
+          title: "Terrain agricole"
+        - 
+          payload: Ferme
+          title: "Ferme"
+        - 
+          payload: Entrepôt
+          title: "Entrepôt"
+      text: "Quel type de biens vous intéresse ?"
+  utter_ask_budget_fr: 
+   - 
+      buttons: 
+        - 
+          payload: "10k-50k"
+          title: "10k-50k"
+        - 
+          payload: "50k-80k"
+          title: "50k-80k"
+        - 
+          payload: "80k-100k"
+          title: "80k-100k"
+      text: "Dans quelle tranche est situé votre budget ?"
+  utter_ask_prtype_fr: 
+   - 
+      buttons: 
+        - 
+          payload: "Un promoteur"
+          title: "Un promoteur"
+        - 
+          payload: "Une agence immobilière"
+          title: "Une agence immobilière"
+      text: "Vous êtes"
+  utter_ask_prcity_fr:
+    - 
+      text: "Dans quelle ville est installée votre entité ?"
+  utter_ask_tele_fr:
+    - 
+      text: "Quel est votre numéro de téléphone ?"
+  utter_ask_entite_fr:
+    - 
+      text: "Comment s’appelle votre entité ?"
+
+  utter_greet_fr:
+    - 
+      text: "Bonjour, je suis votre assistant Multilist, je suis là pour vous accompagner pas à pas dans votre aventure sur le moteur de recherche de l’immobilier au Maroc."
+  utter_prpa_fr: 
+    - 
+      buttons: 
+        - 
+          payload: "Particulier"
+          title: "Particulier"
+        - 
+          payload: "Professionnelle"
+          title: "Professionnelle"
+      text: " Êtes-vous un particulier ou un professionnel ?"
+
+  utter_typelocation_fr: 
+    - 
+      buttons: 
+        - 
+          payload: "Mettre un bien en location"
+          title: "Mettre un bien en location"
+        - 
+          payload: "Louer un bien"
+          title: "Louer un bien"
+      text: |-
+          Que désirez-vous ?
+  utter_saisonOrNot_fr: 
+    - 
+      buttons: 
+        - 
+          payload: "Location longue durée" 
+          title: "Location longue durée "
+        - 
+          payload: "Location saisonnière"
+          title: "Location saisonnière"
+      text: |-
+          Quel type de location désirez-vous ?
+  utter_interess_fr: 
+    - 
+      buttons: 
+        - 
+          payload: "Immobilier neuf" 
+          title: "Immobilier neuf"
+        - 
+          payload: "Immobilier seconde main" 
+          title: "Immobilier seconde main"
+        - 
+          payload: "Lots de terrains" 
+          title: "Lots de terrains"
+        - 
+          payload: "Immobilier professionnel" 
+          title: "Immobilier professionnel"
+        - 
+          payload: "Location saisonnière"
+          title: "Location saisonnière"
+      text: |-
+          Quel type de location désirez-vous ?
+
+  utter_lang: 
+    - 
+      buttons: 
+        - 
+          payload: fr
+          title: "français"
+        - 
+          payload: ar
+          title: "عربي"
+        - 
+          payload: ang
+          title: "English"
+      text: |-
+          quelle langue préférez-vous ?
+  utter_typeop_fr: 
+   - 
+      buttons: 
+        - 
+          payload: "Acheter"
+          title: Acheter
+        - 
+          payload: "Vendre"
+          title: Vendre
+        - 
+          payload: Louer
+          title: "Louer"
+      text: "Comment pourrai-je vous aider ?"
+  utter_linkMsg1_fr:
+    - 
+      text: "Je vous remercie pour votre patience ! Veuillez trouver sur le lien suivant les biens qui répondent à vos critères de recherche : "
+  utter_linkMsg2_fr:
+    - 
+      text: "Je vous remercie pour votre patience ! Veuillez trouver sur le lien suivant les biens qui répondent à vos critères de recherche :"
+  utter_linkMsg01_fr:
+    - 
+      text: "Je vous remercie pour votre patience ! Veuillez trouver sur le lien suivant les biens qui répondent à vos critères de recherche : https://officelist.multilist.immo/"
+  utter_linkMsg02_fr:
+    - 
+      text: "Je vous remercie pour votre patience ! Veuillez trouver sur le lien suivant les biens qui répondent à vos critères de recherche : https://landlist.multilist.immo/"
+  utter_linkMsg03_fr:
+    - 
+      text: "Je vous remercie pour votre patience ! Veuillez trouver sur le lien suivant les biens qui répondent à vos critères de recherche : https://primelist.multilist.immo/"
+  utter_endMsg1_fr:
+    - 
+      text: J’espère avoir pu vous aider et vous remercie pour l’intérêt et la confiance que vous portez à Multilist. N’hésitez pas à me faire parvenir vos avis, remarques et suggestions. À très bientôt !
+  utter_endMsg2_fr:
+    - 
+      text: J’espère avoir pu vous aider ! N’hésitez pas à me faire parvenir vos avis, remarques et suggestions. À très bientôt 
+  utter_endMsg3_fr:
+    - 
+      text: Merci pour votre confiance ! Vos informations ont été transmises au service concerné. Nos équipes vous contacteront dans les plus brefs délais pour vous donner plus d’informations concernant les offres d’abonnement pour professionnels que vous propose Multilist. 
+  utter_endMsg4_fr:
+    - 
+      text: N’hésitez pas à me faire parvenir vos avis, remarques et suggestions. À très bientôt ! 
+
+  utter_m_Location_msg_fr:
+    - 
+      text: Je vous remercie pour l’intérêt et la confiance que vous portez à Multilist. Pour louer votre bien plus rapidement, je vous recommande de remplir le formulaire suivant 
+  utter_vente_msg_fr:
+    - 
+      text: Je vous remercie pour l’intérêt et la confiance que vous portez à Multilist. Pour vendre votre bien plus rapidement, je vous recommande de remplir le formulaire suivant 
+
+
+  utter_ask_name_ang: 
+    - 
+      text: "What is your name? (First and last name)"
+  utter_ask_adress_ang: 
+    - 
+      text: "In which city are you located ?"
+  utter_ask_email_ang: 
+    - 
+      text: "What is your e-mail address?"
+  utter_ask_type_ang: 
+   - 
+      buttons: 
+        - 
+          payload: "House"
+          title: House  
+        - 
+          payload: "Apartment"
+          title: Apartment
+        - 
+          payload: "Studio"
+          title: Studio
+        - 
+          payload: "Villa"
+          title: Villa
+        - 
+          payload: "Duplex"
+          title: Duplex
+        - 
+          payload: "Riad"
+          title: Riad
+      text: "What type of property are you interested in "
+  utter_ask_city_ang: 
+    - 
+      text: "In which city would you like to start your search? "
+  utter_ask_ntype_ang: 
+   - 
+      buttons:
+        - 
+          payload: "House"
+          title: House
+        - 
+          payload: "Apartment"
+          title: Apartment
+        - 
+          payload: Studio
+          title: "Studio"
+        - 
+          payload: Villa
+          title: "Villa"
+        - 
+          payload: Duplex
+          title: "Duplex"
+        - 
+          payload: Riad
+          title: "Riad"
+        - 
+          payload: Office
+          title: "Office"
+        - 
+          payload: Commercial space
+          title: "Commercial space"
+        - 
+          payload: Habitable land
+          title: "Habitable land"
+        - 
+          payload: Agricultural land
+          title: "Agricultural land"
+        - 
+          payload: Farm
+          title: "Farm"
+        - 
+          payload: Storehouse
+          title: "Storehouse"
+      text: "What type of property are you interested in?"
+  utter_ask_atype_ang: 
+   - 
+      buttons: 
+        - 
+          payload: "House"
+          title: House
+        - 
+          payload: "Apartment"
+          title: Apartment
+        - 
+          payload: Studio
+          title: "Studio"
+        - 
+          payload: Villa
+          title: "Villa"
+        - 
+          payload: Duplex
+          title: "Duplex"
+        - 
+          payload: Riad
+          title: "Riad"
+        - 
+          payload: Office
+          title: "Office"
+        - 
+          payload: Commercial space
+          title: "Commercial space"
+        - 
+          payload: Habitable land
+          title: "Habitable land"
+        - 
+          payload: Agricultural land
+          title: "Agricultural land"
+        - 
+          payload: Farm
+          title: "Farm"
+        - 
+          payload: Storehouse
+          title: "Storehouse"
+      text: "What type of property are you interested in?"
+  utter_ask_budget_ang: 
+   - 
+      buttons: 
+        - 
+          payload: "10k-50k"
+          title: "10k-50k"
+        - 
+          payload: "50k-80k"
+          title: "50k-80k"
+        - 
+          payload: "80k-100k"
+          title: "80k-100k"
+      text: "What is your budget range?"
+  utter_ask_prtype_ang: 
+   - 
+      buttons: 
+        - 
+          payload: "A promoter"
+          title: "A promoter"
+        - 
+          payload: "An estate agency"
+          title: "An estate agency"
+      text: "You are"
+  utter_ask_prcity_ang:
+    - 
+      text: "In which city is your entity located?"
+  utter_ask_tele_ang:
+    - 
+      text: "What is your phone number?"
+  utter_ask_entite_ang:
+    - 
+      text: "What is the name of your entity?"
+
+  utter_greet_ang:
+    - 
+      text: "Hello, I am your Multilist assistant, I am here to accompany you step by step in your adventure on the search engine of real estate in Morocco."
+  utter_prpa_ang: 
+    - 
+      buttons: 
+        - 
+          payload: "Individual"
+          title: "Individual"
+        - 
+          payload: "Professional"
+          title: "Professional"
+      text: " Are you an Individual or a professional?"
+
+  utter_typelocation_ang: 
+    - 
+      buttons: 
+        - 
+          payload: "Putting a property up for rent"
+          title: "Putting a property up for rent"
+        - 
+          payload: "Renting a property"
+          title: "Renting a property"
+      text: |-
+          What would you like to see?
+  utter_saisonOrNot_ang: 
+    - 
+      buttons: 
+        - 
+          payload: "Long term rental" 
+          title: "Long term rental "
+        - 
+          payload: "Seasonal rental"
+          title: "Seasonal rental"
+      text: |-
+          Quel type de location désirez-vous ?
+  utter_interess_ang: 
+    - 
+      buttons: 
+        - 
+          payload: "Immobilier neuf" 
+          title: "Immobilier neuf"
+        - 
+          payload: "Immobilier seconde main" 
+          title: "Immobilier seconde main"
+        - 
+          payload: "Lots de terrains" 
+          title: "Lots de terrains"
+        - 
+          payload: "Immobilier professionnel" 
+          title: "Immobilier professionnel"
+        - 
+          payload: "Seasonal rental"
+          title: "Seasonal rental"
+      text: |-
+          What type of rental would you like to have?
+  utter_typeop_ang: 
+   - 
+      buttons: 
+        - 
+          payload: "Buy now"
+          title: Buy now
+        - 
+          payload: "Selling"
+          title: Selling
+        - 
+          payload: Renting
+          title: "Renting"
+      text: "How can I help you?"
+  utter_linkMsg1_ang:
+    - 
+      text: "Thank you for your patience! Please find on the following link the properties that meet your search criteria: "
+  utter_linkMsg2_ang:
+    - 
+      text: "Thank you for your patience! Please find on the following link the properties that meet your search criteria:"
+  utter_linkMsg01_ang:
+    - 
+      text: "Thank you for your patience! Please find on the following link the properties that meet your search criteria: https://officelist.multilist.immo/"
+  utter_linkMsg02_ang:
+    - 
+      text: "Thank you for your patience! Please find on the following link the properties that meet your search criteria:https://landlist.multilist.immo/"
+  utter_linkMsg03_ang:
+    - 
+      text: "Thank you for your patience! Please find on the following link the properties that meet your search criteria: https://primelist.multilist.immo/"
+  utter_endMsg1_ang:
+    - 
+      text: I hope to have been able to help you and thank you for your interest and trust in Multilist. Do not hesitate to send me your opinions, remarks and suggestions. See you soon!
+  utter_endMsg2_ang:
+    - 
+      text: I hope I could help you! Do not hesitate to send me your opinions, remarks and suggestions. See you soon 
+  utter_endMsg3_ang:
+    - 
+      text: Thank you for your trust! Your information has been transmitted to the appropriate department. Our teams will contact you as soon as possible to give you more information about the subscription offers for professionals that Multilist proposes. 
+  utter_endMsg4_ang:
+    - 
+      text: Do not hesitate to send me your opinions, remarks and suggestions. See you soon! 
+
+  utter_m_Location_msg_ang:
+    - 
+      text: I thank you for your interest and trust in Multilist. To rent your property more quickly, I recommend you to fill in the following form 
+  utter_vente_msg_ang:
+    - 
+      text: Thank you for your interest and trust in Multilist. To sell your property more quickly, I recommend you to fill in the following form 
+
+  utter_ask_name_ar: 
+    - 
+      text: "ما اسمكم؟ (الإسم واللقب)"
+  utter_ask_adress_ar: 
+    - 
+      text: "ما المدينة التي تقيمون فيها؟ "
+  utter_ask_email_ar: 
+    - 
+      text: "ما هو عنوان بريدكم الإلكتروني ؟ "
+  utter_ask_type_ar: 
+   - 
+      buttons: 
+        - 
+          payload: "منزل"
+          title: منزل  
+        - 
+          payload: "شقة"
+          title: شقة
+        - 
+          payload: "ستوديو"
+          title: ستوديو
+        - 
+          payload: "فيلا"
+          title: فيلا
+        - 
+          payload: "دوبلكس"
+          title: دوبلكس
+        - 
+          payload: "رياض"
+          title: رياض
+      text: "ما نوع العقار الذي يهمكم؟ "
+  utter_ask_city_ar: 
+    - 
+      text: "في أي مدينة تريدون أن تبدأوا البحث؟  "
+  utter_ask_ntype_ar: 
+   - 
+      buttons:
+        - 
+          payload: "منزل"
+          title: منزل
+        - 
+          payload: "شقة"
+          title: شقة
+        - 
+          payload: ستوديو
+          title: "ستوديو"
+        - 
+          payload: فيلا
+          title: "فيلا"
+        - 
+          payload: دوبلكس
+          title: "دوبلكس"
+        - 
+          payload: رياض
+          title: "رياض"
+        - 
+          payload: مكتب
+          title: "مكتب"
+        - 
+          payload: محل تجاري
+          title: "محل تجاري"
+        - 
+          payload: أرض سكنية
+          title: "أرض سكنية"
+        - 
+          payload:  أرض زراعية
+          title: " أرض زراعية"
+        - 
+          payload: مزرعة
+          title: "مزرعة"
+        - 
+          payload: مستودع
+          title: "مستودع"
+      text: "ما نوع العقار الذي يهمكم؟"
+  utter_ask_atype_ar: 
+   - 
+      buttons: 
+        - 
+          payload: "منزل"
+          title: منزل
+        - 
+          payload: "شقة"
+          title: شقة
+        - 
+          payload: ستوديو
+          title: "ستوديو"
+        - 
+          payload: فيلا
+          title: "فيلا"
+        - 
+          payload: دوبلكس
+          title: "دوبلكس"
+        - 
+          payload: رياض
+          title: "رياض"
+        - 
+          payload: مكتب
+          title: "مكتب"
+        - 
+          payload: محل تجاري
+          title: "محل تجاري"
+        - 
+          payload:  أرض سكنية
+          title: " أرض سكنية"
+        - 
+          payload: أرض زراعية
+          title: "أرض زراعية"
+        - 
+          payload: مزرعة
+          title: "مزرعة"
+        - 
+          payload: مستودع
+          title: "مستودع"
+      text: "ما نوع العقار الذي يهمكم؟"
+  utter_ask_budget_ar: 
+   - 
+      buttons: 
+        - 
+          payload: "10k-50k"
+          title: "10k-50k"
+        - 
+          payload: "50k-80k"
+          title: "50k-80k"
+        - 
+          payload: "80k-100k"
+          title: "80k-100k"
+      text: "? ميزانيتكم تتراوح بين  "
+  utter_ask_prtype_ar: 
+   - 
+      buttons: 
+        - 
+          payload: "مطور عقاري"
+          title: "مطور عقاري"
+        - 
+          payload: "وكالة عقارية"
+          title: "وكالة عقارية"
+      text: "هل أنتم"
+  utter_ask_prcity_ar:
+    - 
+      text: "في أي مدينة تقع شركتكم؟"
+  utter_ask_tele_ar:
+    - 
+      text: "ماهو رقم هاتفكم؟"
+  utter_ask_entite_ar:
+    - 
+      text: "ما اسم شركتكم؟"
+
+  utter_greet_ar:
+    - 
+      text: "مرحباً، أنا مساعدكم Multilist ، أنا هنا لمرافقتكم خطوة بخطوة في مغامرتكم على محرك البحث العقاري
+بالمغرب."
+  utter_prpa_ar: 
+    - 
+      buttons: 
+        - 
+          payload: "خواص"
+          title: "خواص"
+        - 
+          payload: " مهنيي قطاع العقار"
+          title: "مهنيي قطاع العقار"
+      text: "أنتم من الخواص أو من مهنيي قطاع العقار؟ "
+
+  utter_typelocation_ar: 
+    - 
+      buttons: 
+        - 
+          payload: "وضع إعالن لكراء عقاركم"
+          title: "وضع إعالن لكراء عقاركم "
+        - 
+          payload: "تأجير عقار"
+          title: "تأجير عقار"
+      text: |-
+          هل تريدون؟ 
+  utter_saisonOrNot_ar: 
+    - 
+      buttons: 
+        - 
+          payload: "يجار طويل األمد " 
+          title: "يجار طويل األمد  "
+        - 
+          payload: "إيجار موسمي"
+          title: "إيجار موسمي"
+      text: |-
+          ما نوع االيجار الذي يهمكم؟ 
+  utter_interess_ar: 
+    - 
+      buttons: 
+        - 
+          payload: "عقارات جديدة" 
+          title: "عقارات جديدة"
+        - 
+          payload: " عقارات مستعملة" 
+          title: " عقارات مستعملة "
+        - 
+          payload: " أراضي" 
+          title: " أراضي"
+        - 
+          payload: " عقارات مهنية" 
+          title: " عقارات مهنية"
+        - 
+          payload: "إيجار موسمي"
+          title: "إيجار موسمي"
+      text: |-
+          ما نوع الإيجار الذي ترغب في الحصول عليه؟
+
+  utter_typeop_ar: 
+   - 
+      buttons: 
+        - 
+          payload: "شراء "
+          title: شراء
+        - 
+          payload: "بيع"
+          title: بيع
+        - 
+          payload:  إيجار
+          title: " إيجار"
+      text: "كيف يمكنني مساعدك؟"
+  utter_linkMsg1_ar:
+    - 
+      text: "أشكركم على انتظاركم! ستجدون على الرابط التالي النتائج التي تتوافق مع معايير البحث الخاصة بكم:  "
+  utter_linkMsg2_ar:
+    - 
+      text: "أشكركم على انتظاركم! ستجدون على الرابط التالي النتائج التي تتوافق مع معايير البحث الخاصة بكم: "
+  utter_linkMsg01_ar:
+    - 
+      text: "أشكركم على انتظاركم! ستجدون على الرابط التالي النتائج التي تتوافق مع معايير البحث الخاصة بكم: https://officelist.multilist.immo/"
+  utter_linkMsg02_ar:
+    - 
+      text: "أشكركم على انتظاركم! ستجدون على الرابط التالي النتائج التي تتوافق مع معايير البحث الخاصة بكم: https://landlist.multilist.immo/"
+  utter_linkMsg03_ar:
+    - 
+      text: "أشكركم على انتظاركم! ستجدون على الرابط التالي النتائج التي تتوافق مع معايير البحث الخاصة بكم: https://primelist.multilist.immo/"
+  utter_endMsg1_ar:
+    - 
+      text: آمل أني قدمت لكم يد المساعدة! ال تترددوا في إرسال آرائكم وتعليقاتكم ومقترحاتكم. إلى اللقاء!
+  utter_endMsg2_ar:
+    - 
+      text: آمل أني قدمت لكم يد المساعدة! ال تترددوا في إرسال آرائكم وتعليقاتكم ومقترحاتكم. إلى اللقاء! 
+  utter_endMsg3_ar:
+    - 
+      text: أشكركم على ثقتكم! تم إرسال المعلومات الخاصة بكم إلى اإلدارة المعنية. سيتصل بكم خبراؤنا في أقرب وقت ممكن لتزويدكم بالمزيد من المعلومات حول عروض االشتراك للمهنيين التي تقدمها Multilist.
+  utter_endMsg4_ar:
+    - 
+      text: ال تترددوا في إرسال آرائكم وتعليقاتكم ومقترحاتكم. إلى اللقاء! 
+
+  utter_m_Location_msg_ar:
+    - 
+      text: شكرًا لك على اهتمامك وثقتك في Multilist. لاستئجار عقارك بشكل أسرع ، أوصيك بملء النموذج التالي 
+  utter_vente_msg_ar:
+    - 
+      text: شكرًا لك على اهتمامك وثقتك في Multilist. لبيع عقارك بشكل أسرع ، أوصيك بملء النموذج التالي 
