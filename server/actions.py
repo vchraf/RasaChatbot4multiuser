@@ -407,7 +407,7 @@ class saison_form_ar(FormAction):
    
 class n_saison_form_ar(FormAction):
     def name(self):
-     return "n_saison_form_ar"
+        return "n_saison_form_ar"
    
     def required_slots(self,tracker) -> List[Text]:
      return ["ntype_ar","city_ar"]
@@ -497,3 +497,79 @@ class pr_form_ar(FormAction):
        ) -> List[Dict]:
        DataUpdate4proClient(tracker.get_slot("prtype_ar"),tracker.get_slot("entite_ar"),tracker.get_slot("email_ar"),tracker.get_slot("prcity_ar"),tracker.get_slot("tele_ar"))
        return []
+
+
+# class rating_form_fr(FormAction):
+#     def name(self):
+#      return "rating_form_fr"
+   
+#     def required_slots(self,tracker) -> List[Text]:
+#      return ["nbr_rating_fr","txt_rating_fr"]
+#     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
+#         return {
+#                "nbr_rating_fr": [
+#                    self.from_text(),
+#                ],
+#                "txt_rating_fr": [
+#                    self.from_text(),
+#                ],
+#            }
+#     def submit(
+#            self,
+#            dispatcher: CollectingDispatcher,
+#            tracker: Tracker,
+#            domain: Dict[Text, Any],
+#        ) -> List[Dict]:
+#        dispatcher.utter_template("utter_tnx4r_fr", tracker)
+#     #    DataUpdate4proClient(tracker.get_slot("prtype_ar"),tracker.get_slot("entite_ar"),tracker.get_slot("email_ar"),tracker.get_slot("prcity_ar"),tracker.get_slot("tele_ar"))
+#        return []
+
+# class rating_form_ar(FormAction):
+#     def name(self):
+#      return "rating_form_ar"
+   
+#     def required_slots(self,tracker) -> List[Text]:
+#      return ["nbr_rating_ar","txt_rating_ar"]
+#     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
+#         return {
+#                "nbr_rating_ar": [
+#                    self.from_text(),
+#                ],
+#                "txt_rating_ar": [
+#                    self.from_text(),
+#                ],
+#            }
+#     def submit(
+#            self,
+#            dispatcher: CollectingDispatcher,
+#            tracker: Tracker,
+#            domain: Dict[Text, Any],
+#        ) -> List[Dict]:
+#        dispatcher.utter_template("utter_tnx4r_ar", tracker)
+#     #    DataUpdate4proClient(tracker.get_slot("prtype_ar"),tracker.get_slot("entite_ar"),tracker.get_slot("email_ar"),tracker.get_slot("prcity_ar"),tracker.get_slot("tele_ar"))
+#        return []
+
+# class rating_form_ang(FormAction):
+#     def name(self):
+#      return "rating_form_ang"
+   
+#     def required_slots(self,tracker) -> List[Text]:
+#      return ["nbr_rating_ang","txt_rating_ang"]
+#     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
+#         return {
+#                "nbr_rating_ang": [
+#                    self.from_text(),
+#                ],
+#                "txt_rating_ang": [
+#                    self.from_text(),
+#                ],
+#            }
+#     def submit(
+#            self,
+#            dispatcher: CollectingDispatcher,
+#            tracker: Tracker,
+#            domain: Dict[Text, Any],
+#        ) -> List[Dict]:
+#        dispatcher.utter_template("utter_tnx4r_ang", tracker)
+#     #    DataUpdate4proClient(tracker.get_slot("prtype_ar"),tracker.get_slot("entite_ar"),tracker.get_slot("email_ar"),tracker.get_slot("prcity_ar"),tracker.get_slot("tele_ar"))
+#        return []
