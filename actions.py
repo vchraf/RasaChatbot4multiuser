@@ -144,9 +144,12 @@ class achat_form_fr(FormAction):
   return "achat_form_fr"
 
  def required_slots(self,tracker) -> List[Text]:
-  return ["atype_fr","budget_fr","city_fr"]
+  return ["status_fr","atype_fr","budget_fr","city_fr"]
  def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
  	return {
+            "status_fr": [
+                self.from_text(),
+            ],
             "atype_fr": [
                 self.from_text(),
             ],
@@ -287,9 +290,12 @@ class achat_form_ang(FormAction):
      return "achat_form_ang"
    
     def required_slots(self,tracker) -> List[Text]:
-     return ["atype_ang","budget_ang","city_ang"]
+     return ["status_ang","atype_ang","budget_ang","city_ang"]
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
         return {
+               "status_ang": [
+                   self.from_text(),
+               ],
                "atype_ang": [
                    self.from_text(),
                ],
@@ -428,9 +434,12 @@ class achat_form_ar(FormAction):
      return "achat_form_ar"
    
     def required_slots(self,tracker) -> List[Text]:
-     return ["atype_ar","budget_ar","city_ar"]
+     return ["status_ar","atype_ar","budget_ar","city_ar"]
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
         return {
+               "status_ar": [
+                   self.from_text(),
+               ],
                "atype_ar": [
                    self.from_text(),
                ],
