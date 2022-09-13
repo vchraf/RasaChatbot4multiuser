@@ -1,0 +1,9 @@
+version: '3'
+services:
+  rasa-actions:
+    build:
+      context: ./server
+  rasa-server:
+    build: .
+    ports:
+      - '4005:5005'
